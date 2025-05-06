@@ -1,0 +1,2 @@
+﻿#export OU data for specific country from local AD
+$ADExport = get-aduser -Properties co, l,physicaldeliveryofficename,title,description -Filter {co -eq "United States"} | export-csv "C:\Temp\ADexport.csv" -Encoding UTF8

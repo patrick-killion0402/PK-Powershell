@@ -1,0 +1,2 @@
+﻿$PCNAME = ""
+$BLCheck = Get-ADComputer $PCNAME -Properties *
